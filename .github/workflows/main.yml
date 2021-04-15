@@ -41,6 +41,6 @@ jobs:
           # Working directory before zipping
           # directory: # optional, default is .
           # List of excluded files / directories
-          exclusions: .git/, .github/
+          exclusions: .git*
           # Tool to use for archiving
           # type: # optional, default is zip
