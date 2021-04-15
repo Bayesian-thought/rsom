@@ -35,7 +35,7 @@ jobs:
         uses: TheDoctor0/zip-release@0.4.1
         with:
           # Filename for archive
-          # filename: # default is release.zip
+          filename: site.zip
           # Base path for archive files
           # path: # optional, default is .
           # Working directory before zipping
