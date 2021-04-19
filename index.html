@@ -20,7 +20,7 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="index.html">Event</a>
             <a class="nav-link" href="details.html">Details</a>
-            <a class="nav-link" href="#">Register</a>
+            <a class="nav-link" href="#" onclick="document.getElementById('register').submit();">Register</a>
             <a class="nav-link" href="mailto:readlikethedickens@gmail.com">Contact</a>
           </nav>
         </div>
@@ -28,15 +28,18 @@
 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">JUNE 12TH, 2021</h1>
-        <p class="lead">GOPHER HILLS GOLF COURSE<br/>
+        <p class="">GOPHER HILLS GOLF COURSE<br/>
           CANNON FALLS, MN</p>
-        <p>Proceeds from the event go towards<br/> 
-          Tuition Assistance Program for Royal School of Ministry</p>
+        <p class="lead">A charity golf event with proceeds going towards<br/> 
+          Tuition Assistance Program for <a class="link-primary" href="https://royalschoolofministry.com/">Royal School of Ministry</a></p>
         <p class="lead">
           <a href="details.html" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
-
+      <form id="register" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="d-none">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="DD8XFCRE8VTJL">
+    </form>
       <footer class="mastfoot mt-auto">
         <div class="inner">
           <p>

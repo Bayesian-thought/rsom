@@ -20,7 +20,7 @@
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="index.html">Event</a>
             <a class="nav-link active" href="details.html">Details</a>
-            <a class="nav-link" href="#">Register</a>
+            <a class="nav-link" href="#" onclick="document.getElementById('register').submit();">Register</a>
             <a class="nav-link" href="mailto:readlikethedickens@gmail.com">Contact</a>
           </nav>
         </div>
@@ -43,7 +43,7 @@
 
         <h3>Format</h2>
         <ul class="text-left">
-            <li>Foursomes - best ball scramble</li>
+            <li>18 total foursomes - best ball scramble</li>
             <li>Gather some friends or sign up as single and we'll pair you up</li>
         </ul>
 
@@ -53,6 +53,11 @@
             <li>Silent Auction, Door Prizes, Gift bags, Fellowship & More!</li>
             <li>All entrants must pre-pay by June 3rd</li>
         </ul>
+
+        <form id="register" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="d-none">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="DD8XFCRE8VTJL">
+        </form>
 
       </main>
 
@@ -64,7 +69,7 @@
         </div>
       </footer>
     </div>
-
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
